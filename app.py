@@ -5,6 +5,7 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import plotly.express as px
 import math
+import pandas as pd
 
 
 # Keep this out of source code repository - save in a file or a database
