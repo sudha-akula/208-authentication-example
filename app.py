@@ -81,7 +81,7 @@ def update_graph(dropdown_value):
 #     x_values = [-3,-2,-1,0,1,2,3]
 #     y_values = [x**dropdown_value for x in x_values]
 #     colors=['black','red','green','blue','orange','purple']
-    graph_title='Bubble Chart of {}'.format(str(dropdown_value))
+    graph_title='Life Expectancy vs Per Capita GDP 2007 {}'.format(str(dropdown_value))
 
     #df_2007 = df_2007.query("continent == '%s'" %dropdown_value)
     
