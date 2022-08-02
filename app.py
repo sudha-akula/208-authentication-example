@@ -67,7 +67,7 @@ app.layout = html.Div([
     dcc.Graph(id='graph'),
     html.A('Auth Code on Github', href='https://github.com/austinlasseter/dash-auth-example'),
     html.Br(),
-    html.A('Plotly Code on Github', href='https://plotly.com/python/bubble-charts/'),
+    html.A('Plotly Code', href='https://plotly.com/python/bubble-charts/'),
     html.Br(),
     html.A("Data Source", href='https://dash.plotly.com/authentication'),
 ], className='container')
