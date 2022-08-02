@@ -83,16 +83,15 @@ def update_graph(dropdown_value):
 #     colors=['black','red','green','blue','orange','purple']
     graph_title='Bubble Chart of {}'.format(str(dropdown_value))
 
-
-    fig = px.scatter(df_2007.query("continent==2007"), x="gdpPercap", y="lifeExp",
-	         size="pop", color="continent",
-                 hover_name="country", log_x=True, size_max=60)
+    #df_2007 = df_2007.query("continent == '%s'" %dropdown_value)
     
-    fig = px.scatter(df_2007.query("continent=='Europe'"), x="gdpPercap", y="lifeExp",
-	         size="pop",color="iso_alpha",
+    fig = px.scatter(df_2007.query("continent == '%s'" %dropdown_value), x="gdpPercap", y="lifeExp",
+	         size="pop", color="country",
                  hover_name="country", log_x=True, size_max=60)
+   
+    # fig.show()  
     return graph_title, fig
-    # fig.show()
+
 
 
 
