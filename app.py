@@ -66,6 +66,7 @@ app.layout = html.Div([
     html.Div(id='graph-title'),
     dcc.Graph(id='graph'),
     html.A('Auth Code on Github', href='https://github.com/austinlasseter/dash-auth-example'),
+    html.Br(),
     html.A('Plotly Code on Github', href='https://plotly.com/python/bubble-charts/'),
     html.Br(),
     html.A("Data Source", href='https://dash.plotly.com/authentication'),
@@ -76,6 +77,8 @@ app.layout = html.Div([
     Output('graph', 'figure'),
     Input('dropdown', 'value'),
     )
+
+
 def update_graph(dropdown_value):
 
 #     x_values = [-3,-2,-1,0,1,2,3]
@@ -91,9 +94,6 @@ def update_graph(dropdown_value):
    
     # fig.show()  
     return graph_title, fig
-
-
-
 
     # trace0 = go.Scatter(
     #     x = x_values,
